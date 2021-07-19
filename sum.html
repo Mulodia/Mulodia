@@ -32,12 +32,46 @@
     <script>
         function sum()
         {
-            var n1=parseFloat(document.getElementById("txtn1").value);
-            var n2=parseFloat(document.getElementById("txtn2").value);
+            var n1=document.getElementById("txtn1").value;
+            
+            if(n1=="")
+            {
+                alert("Please enter 1st Number");
+                return;
+            }
+            n1=parseFloat(n1);
+
+            if(isNaN(n1))
+            {
+                alert("N1 is Invalid");
+                return;
+            }
+
+            var n2=document.getElementById("txtn2").value;
+            if(n2=="")
+            {
+                alert("Please enter 2nd Number");
+                return;
+            }
+            
+            n2=parseFloat(n2);
+
+            
+            if(isNaN(n2))
+            {
+                alert("N2 is Invalid");
+                return;
+            }
             var s;
             s=n1+n2;
-            document.getElementById("txtresult").value=s;
             
+            
+            document.getElementById("txtresult").value=s;
+            var temp=n1;
+            n1=n2;
+            n2=temp;
+            alert("After Swap N1 is  +" + n1 + " and N2 is " + n2);
+
         }
     </script>
 </body>
