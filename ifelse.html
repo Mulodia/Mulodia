@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else</title>
+</head>
+<body>
+    <script>
+        var mrp=parseFloat(prompt("enter mrp of book"));
+        var dis=0;
+        if(mrp>=500)
+        {
+            dis=mrp*10/100;
+        }
+        else{
+            dis=mrp*5/100;
+        }
+        net =mrp-dis;
+        document.write("MRP = " +  mrp + " Dis = " + dis + " Net = " + net);
+        
+    </script>
+</body>
+</html>

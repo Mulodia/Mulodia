@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        var fname="Harpal";
+        var lname="Singh";
+        var fullname=fname + " " + lname;
+        var a="AB ";
+        var b=" CD ";
+        var c=a.trim()+b.trim();
+        document.write(c);
+        fullname=fullname.replace("Singh","Kaur");
+
+        //alert("Hello " + fullname);
+        document.write("<h1>Hello " + fullname.toUpperCase() + "</h1>");
+
+        var str="A Blue bottle with a blue liquid is on a blue table";
+        var str1=str.replace(/blue/gi,"green");
+        document.write(str1);
+
+    </script>
+</body>
+</html>
